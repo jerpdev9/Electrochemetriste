@@ -1,0 +1,57 @@
+.
+├── __pycache__
+│   └── app.cpython-310.pyc
+├── app.py
+├── project_tree.txt
+├── requirements.txt
+├── static
+│   └── styles.css
+├── templates
+│   └── index.html
+└── venv
+    ├── bin
+    │   ├── activate
+    │   ├── activate.csh
+    │   ├── activate.fish
+    │   ├── Activate.ps1
+    │   ├── docutils
+    │   ├── f2py
+    │   ├── flask
+    │   ├── fonttools
+    │   ├── get_gprof
+    │   ├── get_objgraph
+    │   ├── ipython
+    │   ├── ipython3
+    │   ├── normalizer
+    │   ├── numpy-config
+    │   ├── pip
+    │   ├── pip3
+    │   ├── pip3.10
+    │   ├── plotly_get_chrome
+    │   ├── pyftmerge
+    │   ├── pyftsubset
+    │   ├── pygmentize
+    │   ├── python -> python3
+    │   ├── python3 -> /Users/juanreyespastene/.local/share/virtualenvs/El_Tio_POS-ZI99OFYx/bin/python3
+    │   ├── python3.10 -> python3
+    │   ├── rst2html
+    │   ├── rst2html4
+    │   ├── rst2html5
+    │   ├── rst2latex
+    │   ├── rst2man
+    │   ├── rst2odt
+    │   ├── rst2pseudoxml
+    │   ├── rst2s5
+    │   ├── rst2xetex
+    │   ├── rst2xml
+    │   ├── ttx
+    │   └── undill
+    ├── include
+    ├── lib
+    │   └── python3.10
+    ├── pyvenv.cfg
+    └── share
+        ├── jupyter
+        └── man
+
+12 directories, 43 files

@@ -1,0 +1,9 @@
+flask
+matplotlib
+pyCHNOSZ
+numpy
+pandas
+scipy
+scikit-learn
+seaborn
+requests

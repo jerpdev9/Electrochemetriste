@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Diagrama de Pourbaix</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <!-- Panel izquierdo: búsqueda y selección -->
+    <div class="left-panel">
+      <h2>Especies químicas</h2>
+      <input type="text" id="search" placeholder="Buscar..." onkeyup="filterList()" />
+      <button type="button" onclick="showAll()">Mostrar todos</button>
+      <form id="species-form" method="POST" action="/diagram" target="diagram-frame">
+        <div id="species-list" class="species-list">
+          {% for sp in species %}
+            <label>
+              <input type="checkbox" name="species" value="{{ sp }}" /> {{ sp }}
+            </label><br />
+          {% endfor %}
+        </div>
+        <button type="submit" class="generate-btn">Generar diagrama</button>
+      </form>
+    </div>
+
+    <!-- Panel derecho: imagen del diagrama -->
+    <div class="right-panel">
+      <iframe name="diagram-frame" class="diagram-frame"></iframe>
+    </div>
+  </div>
+
+  <script>
+    // Filtra los elementos de la lista en función del texto ingresado
+    function filterList() {
+      const input = document.getElementById("search").value.toLowerCase();
+      const items = document.querySelectorAll("#species-list label");
+      items.forEach(item => {
+        item.style.display = item.textContent.toLowerCase().includes(input) ? "" : "none";
+      });
+    }
+
+    // Muestra nuevamente todos los elementos y limpia el buscador
+    function showAll() {
+      document.getElementById("search").value = "";
+      filterList();
+    }
+  </script>
+</body>
+</html>
